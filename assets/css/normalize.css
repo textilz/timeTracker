@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*
+    Типография
+*/
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/*
+    Секции
+*/
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+hr {
+    margin: 0;
+}
+
+
+/*
+    Ссылки
+*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*
+    Изображения
+*/
+
+img {
+    vertical-align: top;
+}
+
+
+/*
+    Списки
+*/
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+/*
+    Формы
+*/
+
+input {
+    padding: 0;
+    font-family: inherit;
+}
+
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+textarea {
+    padding: 0;
+    font-family: inherit;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}
