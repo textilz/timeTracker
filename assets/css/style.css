@@ -109,6 +109,12 @@ main .container {
     gap: var(--gutter-lg);
 }
 
+.flow {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-lg);
+}
+
 .button-container {
     display: flex;
     gap: var(--gutter-lg);
@@ -132,13 +138,15 @@ main .container {
 }
 
 .button_medium {
-    padding: 0 var(--gutter-sm);
+    padding: var(--gutter-sm) 0;
     font-size: var(--size-sm);
+    border-radius: var(--border-radius-sm);
 }
 
 .button_small {
     padding: 5px 5px;
     font-size: var(--size-sm);
+    border-radius: var(--border-radius-sm);
 }
 
 .color_accept {
@@ -161,3 +169,75 @@ main .container {
     color: var(--color-font);
 }
 
+.component {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-sm);
+
+    padding: var(--gutter-md);
+
+    border-radius: var(--border-radius-lg);
+
+    box-shadow: 0 4px 15px 1px rgba(0, 0, 0, 0.25);
+}
+
+.form h2 {
+    font-size: var(--size-md);
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-sm);
+}
+
+.form input, .form textarea, .tags {
+    padding: var(--gutter-sm);
+    font-size: var(--size-sm);
+    font-weight: 700;
+    border-radius: var(--border-radius-sm);
+
+    border: 1px solid var(--color-input);
+}
+
+.form textarea {
+    resize: vertical;
+}
+
+.form input::placeholder, .form textarea::placeholder {
+    color: var(--color-input);
+}
+
+.timer {
+    border: none !important;
+    text-align: center;
+}
+
+.tags h3 {
+    font-size: var(--size-sm);
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter-sm);
+    margin-top: var(--gutter-sm);
+}
+
+.tag {
+    padding: 5px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--color-input);
+    cursor: pointer;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer {
+    padding: var(--gutter-sm) var(--gutter-lg) !important;
+    width: 100px;
+}
